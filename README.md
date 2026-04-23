@@ -17,6 +17,17 @@
 -   ⚡ **Drag & Drop:** Intuitive UX based on a seamless Drag & Drop zone.
 -   ⚙️ **Fine-Tuning:** Millisecond-level control with support for multiple encodings (UTF-8 and ANSI).
 
+## 🌐 Supported Languages
+
+FlowSRT is localized for a global audience, covering over 19 major languages:
+
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| 🇺🇸 English | 🇧🇷 Portuguese | 🇪🇸 Spanish | 🇫🇷 French | 🇮🇹 Italian |
+| 🇩🇪 German | 🇷🇺 Russian | 🇹🇷 Turkish | 🇨🇳 Chinese | 🇯🇵 Japanese |
+| 🇰🇷 Korean | 🇸🇦 Arabic | 🇮🇳 Hindi | 🇧🇩 Bengali | 🇵🇰 Urdu |
+| 🇮🇩 Indonesian | 🇹🇭 Thai | 🇻🇳 Vietnamese | 🇮🇳 Telugu | |
+
 ## 🚀 How to Use
 
 1.  Go to the [Releases](https://github.com/alazter/flow-srt/releases/latest) tab.

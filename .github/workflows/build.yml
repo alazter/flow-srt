@@ -1,0 +1,33 @@
+name: Release FlowSRT Multiplataforma
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    strategy:
+      matrix:
+        os: [windows-latest, macos-latest, ubuntu-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4  # CORREÇÃO: Antes estava checkout aqui
+        with:
+          node-version: 20           # Versão mais atual e estável
+          cache: 'npm'
+
+      - name: Instalar Dependências
+        run: npm install
+
+      - name: Compilar e Publicar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # AJUSTE: Comando inteligente que detecta o sistema operacional sozinho
+        run: npx electron-builder --publish always
